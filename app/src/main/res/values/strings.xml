@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Dynamis</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="logo_dynamis">Logo Dynamis</string>
+    <string name="registro">Registro</string>
+    <string name="listar">Listar</string>
+    <string name="actividad">Actividad</string>
+    <string name="pagos">Pagos</string>
+    <string name="todo">TODO</string>
+    <string name="socios">Socios</string>
+    <string name="no_socios">No Socios</string>
+    <string name="registrar_socio_nuevo">Registrar Socio Nuevo</string>
+    <string name="modificar_o_eliminar_registros">Modificar o Eliminar Registros</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">apellido</string>
+    <string name="Apellido">Apellido</string>
+    <string name="_123456789">123456789</string>
+    <string name="ficha_inscripci_n">Ficha Inscripción</string>
+    <string name="dd_mm_aaaa">dd/mm/aaaa</string>
+    <string name="foto">FOTO</string>
+    <string name="pago">PAGO</string>
+    <string name="_5000">$5000</string>
+    <string name="cuota_inicial">Cuota Inicial</string>
+    <string name="registrar_nuevo_socio">REGISTRAR NUEVO SOCIO</string>
+    <string name="calle_falsa_123">Calle Falsa 123</string>
+    <string name="apto_m_dico">Apto Médico</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="limpiar">LIMPIAR</string>
+</resources>

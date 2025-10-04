@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="midnightblue">#011126</color>
+    <color name="mintgreen">#91D99C</color>
+    <color name="deepsea">#154659</color>
+    <color name="teal">#026873</color>
+    <color name="esmeraldgreen">#00B469</color>
+    <color name="sagegreen">#5ABF59</color>
+
+
+</resources>
