@@ -10,28 +10,29 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class GestionSocios : AppCompatActivity() {
+class GestionNoSocios : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.gestion_socios)
+        setContentView(R.layout.gestion_no_socios)
         val btnAtras = findViewById<ImageButton>(R.id.btnAtras)
         btnAtras.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
 
         }
-        val btnSocio = findViewById<Button>(R.id.btnRegistrarSocioNuevo)
-        btnSocio.setOnClickListener{
-            val intent = Intent(this, RegistrarNuevoSocio::class.java)
+
+        val btnNoSocios = findViewById<Button>(R.id.btnRegistrarNoSocioNuevo)
+        btnNoSocios.setOnClickListener{
+            val intent = Intent(this, RegistrarNuevoNoSocio::class.java)
             startActivity(intent)}
 
-            val btnModificar = findViewById<Button>(R.id.btnModificar)
-            btnModificar.setOnClickListener{
-                val intent = Intent(this, ModificarEliminarRegistro::class.java)
+            val btnModificarNoSocios = findViewById<Button>(R.id.btnModificarNoSocios)
+            btnModificarNoSocios.setOnClickListener{
+                val intent = Intent(this, ModificarEliminarRegistroNoSocio::class.java)
                 startActivity(intent)}
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.gestion_socios)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.gestion_no_socios)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets

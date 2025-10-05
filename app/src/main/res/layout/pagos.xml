@@ -2,60 +2,59 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/gestion_socios"
+    android:id="@+id/pagos"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GestionSocios"
     android:background="@drawable/background"
-    >
+
+    tools:context=".Pagos">
+
+
     <include
         layout="@layout/navbar_superior"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"/>
+        android:layout_height="wrap_content" />
 
 
     <TextView
-        android:id="@+id/txtGestion"
-        android:layout_width="206dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="180dp"
+        android:id="@+id/txtRegistroPagos"
+        android:layout_width="281dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="136dp"
+        android:text="@string/registro_de_pagos"
         android:textAlignment="center"
-        android:text="GESTION SOCIOS"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnRegistrarSocioNuevo"
-        android:layout_width="255dp"
-        android:layout_height="134dp"
-        android:layout_marginTop="108dp"
+        android:id="@+id/btnPagarCuota"
+        android:layout_width="256dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="100dp"
         android:backgroundTint="@color/midnightblue"
-        android:text="@string/registrar_socio_nuevo"
-        android:textSize="30sp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtGestion" />
-
-    <Button
-        android:id="@+id/btnModificar"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:backgroundTint="@color/midnightblue"
-        android:text="@string/modificar_o_eliminar_registros"
+        android:text="@string/pagar_cuota"
         android:textSize="30sp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnRegistrarSocioNuevo" />
+        app:layout_constraintTop_toBottomOf="@id/txtRegistroPagos" />
 
+    <Button
+        android:id="@+id/btnPagarActividad"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/midnightblue"
+        android:text="@string/pagar_actividad"
+        android:textSize="30sp"
 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPagarCuota" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/gestion_socios"
+    android:id="@+id/listar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GestionSocios"
+    tools:context=".Listar"
     android:background="@drawable/background"
     >
     <include
@@ -16,12 +16,12 @@
 
 
     <TextView
-        android:id="@+id/txtGestion"
+        android:id="@+id/txtListar"
         android:layout_width="206dp"
         android:layout_height="88dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="116dp"
+        android:text="LISTAR"
         android:textAlignment="center"
-        android:text="GESTION SOCIOS"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -31,31 +31,45 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnRegistrarSocioNuevo"
-        android:layout_width="255dp"
-        android:layout_height="134dp"
-        android:layout_marginTop="108dp"
+        android:id="@+id/btnListarSocios"
+        android:layout_width="275dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="@color/midnightblue"
-        android:text="@string/registrar_socio_nuevo"
-        android:textSize="30sp"
+        android:text="@string/listar_socios"
+        android:textSize="20sp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtGestion" />
+        app:layout_constraintTop_toBottomOf="@id/txtListar" />
 
     <Button
-        android:id="@+id/btnModificar"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:id="@+id/btnListarNoSocios"
+        android:layout_width="275dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="56dp"
         android:backgroundTint="@color/midnightblue"
-        android:text="@string/modificar_o_eliminar_registros"
-        android:textSize="30sp"
+        android:text="@string/listar_no_socios"
+        android:textSize="20sp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnRegistrarSocioNuevo" />
+        app:layout_constraintTop_toBottomOf="@id/btnListarSocios" />
+
+    <Button
+        android:id="@+id/btnListarVencimientos"
+        android:layout_width="275dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/midnightblue"
+        android:text="@string/listar_vencimientos"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnListarNoSocios" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,19 +17,25 @@ class Login : AppCompatActivity() {
         val btnIniciarSesion = findViewById<Button>(R.id.btnIniciarSesion)
 
         btnIniciarSesion.setOnClickListener {
-          try{  val usuario = txtUsuario.text.toString().trim()
-                val password = txtPassword.text.toString().trim()
+        val intent = Intent(this, MainMenu::class.java)
+        startActivity(intent)
+        finish()
 
-            if (usuario == "admin" && password == "1234") {
-                val intent = Intent(this, MainMenu::class.java)
-                startActivity(intent)
-                finish() //
-            } else {
-                Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
+
+            /*Lo dejo comentado para usarlo en la proxima entrega
+            try{  val usuario = txtUsuario.text.toString().trim()
+                  val password = txtPassword.text.toString().trim()
+
+              if (usuario == "admin" && password == "1234") {
+                  val intent = Intent(this, MainMenu::class.java)
+                  startActivity(intent)
+                  finish()
+              } else {
+                  Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
+              }
+            }catch (e: Exception){
+                Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_LONG).show()
             }
-          }catch (e: Exception){
-              Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_LONG).show()
-          }
-        }
+          }*/
     }
-}
+}}

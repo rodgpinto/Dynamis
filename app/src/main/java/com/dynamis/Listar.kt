@@ -10,28 +10,35 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class GestionSocios : AppCompatActivity() {
+class Listar : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.gestion_socios)
+        setContentView(R.layout.listar)
+
         val btnAtras = findViewById<ImageButton>(R.id.btnAtras)
         btnAtras.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
 
         }
-        val btnSocio = findViewById<Button>(R.id.btnRegistrarSocioNuevo)
-        btnSocio.setOnClickListener{
-            val intent = Intent(this, RegistrarNuevoSocio::class.java)
+
+        val btnListarSocios = findViewById<Button>(R.id.btnListarSocios)
+        btnListarSocios.setOnClickListener{
+            val intent = Intent(this, ListarSocios::class.java)
             startActivity(intent)}
 
-            val btnModificar = findViewById<Button>(R.id.btnModificar)
-            btnModificar.setOnClickListener{
-                val intent = Intent(this, ModificarEliminarRegistro::class.java)
-                startActivity(intent)}
+        /*val btnListarNoSocios = findViewById<Button>(R.id.btnListarNoSocios)
+        btnListarNoSocios.setOnClickListener{
+            val intent = Intent(this, ListarNoSocios::class.java)
+            startActivity(intent)}
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.gestion_socios)) { v, insets ->
+        val btnListarVencimientos = findViewById<Button>(R.id.btnListarVencimientos)
+        btnListarVencimientos.setOnClickListener{
+            val intent = Intent(this, ListarVencimientos::class.java)
+            startActivity(intent)}*/
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.listar)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets

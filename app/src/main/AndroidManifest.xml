@@ -12,6 +12,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dynamis">
         <activity
+            android:name=".ListarNoSocios"
+            android:exported="false" />
+        <activity
+            android:name=".ListarSocios"
+            android:exported="false" />
+        <activity
+            android:name=".Listar"
+            android:exported="false" />
+        <activity
+            android:name=".PagoActividad"
+            android:exported="false" />
+        <activity
+            android:name=".PagoCuota"
+            android:exported="false" />
+        <activity
+            android:name=".Pagos"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarEliminarRegistroNoSocio"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarNuevoNoSocio"
+            android:exported="false" />
+        <activity
+            android:name=".GestionNoSocios"
+            android:exported="false" />
+        <activity
+            android:name=".ModificarEliminarRegistro"
+            android:exported="false" />
+        <activity
             android:name=".RegistrarNuevoSocio"
             android:exported="false" />
         <activity

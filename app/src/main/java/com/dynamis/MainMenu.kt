@@ -21,6 +21,19 @@ class MainMenu : AppCompatActivity() {
             val intent = Intent(this, Registro::class.java)
             startActivity(intent)
         }
+
+        val btnPagos = findViewById<Button>(R.id.btnPagos)
+        btnPagos.setOnClickListener {
+            val intent = Intent(this, Pagos::class.java)
+            startActivity(intent)
+        }
+
+        val btnListar = findViewById<Button>(R.id.btnListar)
+        btnListar.setOnClickListener {
+            val intent = Intent(this, Listar::class.java)
+            startActivity(intent)
+        }
+
         val rootView = findViewById<android.view.View>(R.id.main_menu)
         ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

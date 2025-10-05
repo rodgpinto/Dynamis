@@ -28,4 +28,19 @@
     <string name="apto_m_dico">Apto Médico</string>
     <string name="ingresar">INGRESAR</string>
     <string name="limpiar">LIMPIAR</string>
+    <string name="modificar_registros_socios">MODIFICAR REGISTROS SOCIOS</string>
+    <string name="subir_foto">SUBIR FOTO</string>
+    <string name="ver_carnet">VER CARNET</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="gestion_no_socios">GESTION NO SOCIOS</string>
+    <string name="registrar_no_socio_nuevo">Registrar No Socio Nuevo</string>
+    <string name="registrar_nuevo_no_socio">REGISTRAR NUEVO NO SOCIO</string>
+    <string name="registro_de_pagos">Registro de Pagos</string>
+    <string name="pagar_cuota">Pagar Cuota</string>
+    <string name="pagar_actividad">Pagar Actividad</string>
+    <string name="pago_de_cuota">PAGO DE CUOTA</string>
+    <string name="pago_de_actividad">PAGO DE ACTIVIDAD</string>
+    <string name="listar_vencimientos">LISTAR VENCIMIENTOS</string>
+    <string name="listar_no_socios">LISTAR NO SOCIOS</string>
+    <string name="listar_socios">LISTAR SOCIOS</string>
 </resources>

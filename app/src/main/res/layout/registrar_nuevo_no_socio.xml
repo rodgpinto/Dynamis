@@ -6,15 +6,29 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:background="@drawable/background"
-    tools:context=".RegistrarNuevoSocio"
+    tools:context=".RegistrarNuevoNoSocio"
 
     app:layout_constraintEnd_toEndOf="parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/registrar_nuevo_socio"
+        android:id="@+id/registrar_nuevo_no_socio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="1312dp"
+            android:backgroundTint="@color/midnightblue"
+            android:text="@string/limpiar"
+            android:textSize="20sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <include
             layout="@layout/navbar_superior"
@@ -22,23 +36,24 @@
             android:layout_height="wrap_content" />
 
 
+
         <View
-        android:id="@+id/divider2"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginTop="20dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgDynamis" />
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgDynamis" />
 
         <TextView
             android:id="@+id/txtRegistrarNuevoSocio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="299dp"
+            android:layout_height="80dp"
             android:layout_marginTop="100dp"
             android:gravity="center"
-            android:text="@string/registrar_nuevo_socio"
+            android:text="@string/registrar_nuevo_no_socio"
             android:textColor="@android:color/black"
             android:textSize="35sp"
             android:textStyle="bold"
@@ -184,7 +199,7 @@
 
         <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/txtPago"
@@ -219,13 +234,13 @@
             android:id="@+id/txtPagoCuota"
             android:layout_width="258dp"
             android:layout_height="52dp"
-            android:layout_marginStart="92dp"
             android:layout_marginTop="1064dp"
             android:ems="10"
             android:hint="@string/_5000"
             android:inputType="numberDecimal"
 
             android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -273,30 +288,17 @@
             android:id="@+id/btnIngresar"
             android:layout_width="150dp"
             android:layout_height="80dp"
-            android:layout_marginTop="1324dp"
+            android:layout_marginTop="1312dp"
+            android:backgroundTint="@color/midnightblue"
             android:text="@string/ingresar"
             android:textSize="20sp"
-            android:backgroundTint="@color/midnightblue"
 
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintEnd_toStartOf="@+id/btnLimpiar"
+            app:layout_constraintHorizontal_bias="0.168"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/btnLimpiar"
-            android:layout_width="150dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="1324dp"
-            android:text="@string/limpiar"
-            android:textSize="20sp"
-            android:backgroundTint="@color/midnightblue"
-
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.894"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>
+    </ScrollView>
