@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dynamis">
         <activity
+            android:name=".Actividades"
+            android:exported="false" />
+        <activity
+            android:name=".ListarVencimientos"
+            android:exported="false" />
+        <activity
             android:name=".ListarNoSocios"
             android:exported="false" />
         <activity

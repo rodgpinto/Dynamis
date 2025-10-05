@@ -34,6 +34,12 @@ class MainMenu : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnActividad = findViewById<Button>(R.id.btnActividad)
+        btnActividad.setOnClickListener {
+            val intent = Intent(this, Actividades::class.java)
+            startActivity(intent)
+        }
+
         val rootView = findViewById<android.view.View>(R.id.main_menu)
         ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

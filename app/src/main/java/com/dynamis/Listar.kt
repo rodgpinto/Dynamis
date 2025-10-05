@@ -28,7 +28,7 @@ class Listar : AppCompatActivity() {
             val intent = Intent(this, ListarSocios::class.java)
             startActivity(intent)}
 
-        /*val btnListarNoSocios = findViewById<Button>(R.id.btnListarNoSocios)
+        val btnListarNoSocios = findViewById<Button>(R.id.btnListarNoSocios)
         btnListarNoSocios.setOnClickListener{
             val intent = Intent(this, ListarNoSocios::class.java)
             startActivity(intent)}
@@ -36,7 +36,7 @@ class Listar : AppCompatActivity() {
         val btnListarVencimientos = findViewById<Button>(R.id.btnListarVencimientos)
         btnListarVencimientos.setOnClickListener{
             val intent = Intent(this, ListarVencimientos::class.java)
-            startActivity(intent)}*/
+            startActivity(intent)}
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.listar)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
