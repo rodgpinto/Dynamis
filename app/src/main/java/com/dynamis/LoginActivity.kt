@@ -18,28 +18,33 @@ class LoginActivity : AppCompatActivity() {
         val txtPassword = findViewById<EditText>(R.id.txtPassword)
         val btnIniciarSesion = findViewById<Button>(R.id.btnIniciarSesion)
 
+        val dbHelper = AdminSQLiteOpenHelper(this)
+
         btnIniciarSesion.setOnClickListener {
-
-
             try {
                 val usuario = txtUsuario.text.toString().trim()
                 val password = txtPassword.text.toString().trim()
 
-                if (usuario == "admin" && password == "1234") {
-                    val intent = Intent(this, MainMenuActivity::class.java)
-                    intent.putExtra("usuario", usuario)
-                    Toast.makeText(this, "Bienvenido $usuario", Toast.LENGTH_SHORT).show()
-                    startActivity(intent)
-                    finish()
-                } else if (usuario.isEmpty() || password.isEmpty()) {
+                if (usuario.isEmpty() || password.isEmpty()) {
                     Toast.makeText(this, "Por favor complete todos los campos", Toast.LENGTH_SHORT)
                         .show()
                 } else {
-                    Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT)
-                        .show()
+
+                    val loginSuccess = dbHelper.checkUser(usuario, password)
+
+                    if (loginSuccess) {
+                        val intent = Intent(this, MainMenuActivity::class.java)
+                        intent.putExtra("usuario", usuario)
+                        Toast.makeText(this, "Bienvenido $usuario", Toast.LENGTH_SHORT).show()
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT)
+                            .show()
+                    }
                 }
             } catch (e: Exception) {
-                Toast.makeText(this, "Error: ${e.message}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Error de base de datos: ${e.message}", Toast.LENGTH_LONG).show()
             }
         }
     }
