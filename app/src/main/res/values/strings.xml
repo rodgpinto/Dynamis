@@ -20,6 +20,8 @@
     <string name="ficha_inscripci_n">Ficha Inscripción</string>
     <string name="dd_mm_aaaa">dd/mm/aaaa</string>
     <string name="foto">FOTO</string>
+    <string name="logo_de_la_app">Logo de la aplicación</string>
+    <string name="boton_de_ayuda">Botón de ayuda</string>
     <string name="pago">PAGO</string>
     <string name="_5000">$5000</string>
     <string name="cuota_inicial">Cuota Inicial</string>
@@ -43,4 +45,12 @@
     <string name="listar_vencimientos">LISTAR VENCIMIENTOS</string>
     <string name="listar_no_socios">LISTAR NO SOCIOS</string>
     <string name="listar_socios">LISTAR SOCIOS</string>
+        <string name="navbar_back_description">Volver atrás</string>
+        <string name="navbar_menu_description">Menú de Sesión</string>
+    <string name="vencimientos_de_hoy">Vencimientos de hoy</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="Documento">Documento</string>
+    <string name="cuota">Precio cuota</string>
+    <string name="fecha_pago">Fecha de pago 10/10/2025</string>
+    <string name="precio_actividad">Precio actividad</string>
 </resources>

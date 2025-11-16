@@ -6,68 +6,68 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/dynamis"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/dynamis_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dynamis">
         <activity
-            android:name=".Actividades"
+            android:name=".ActividadesActivity"
             android:exported="false" />
         <activity
-            android:name=".ListarVencimientos"
+            android:name=".ListarVencimientosActivity"
+            android:exported="false" />
+        <activity android:name=".CarnetActivity" />
+        <activity
+            android:name=".ListarNoSociosActivity"
             android:exported="false" />
         <activity
-            android:name=".ListarNoSocios"
+            android:name=".ListarSociosActivity"
             android:exported="false" />
         <activity
-            android:name=".ListarSocios"
+            android:name=".ListarActivity"
             android:exported="false" />
         <activity
-            android:name=".Listar"
+            android:name=".PagoActividadActivity"
             android:exported="false" />
         <activity
-            android:name=".PagoActividad"
+            android:name=".PagoCuotaActivity"
             android:exported="false" />
         <activity
-            android:name=".PagoCuota"
+            android:name=".PagosActivity"
             android:exported="false" />
         <activity
-            android:name=".Pagos"
+            android:name=".ModificarEliminarRegistroNoSocioActivity"
             android:exported="false" />
         <activity
-            android:name=".ModificarEliminarRegistroNoSocio"
+            android:name=".RegistrarNuevoNoSocioActivity"
             android:exported="false" />
         <activity
-            android:name=".RegistrarNuevoNoSocio"
+            android:name=".GestionNoSociosActivity"
             android:exported="false" />
         <activity
-            android:name=".GestionNoSocios"
+            android:name=".ModificarEliminarRegistroActivity"
             android:exported="false" />
         <activity
-            android:name=".ModificarEliminarRegistro"
+            android:name=".RegistrarNuevoSocioActivity"
             android:exported="false" />
         <activity
-            android:name=".RegistrarNuevoSocio"
+            android:name=".GestionSociosActivity"
             android:exported="false" />
         <activity
-            android:name=".GestionSocios"
+            android:name=".RegistroActivity"
             android:exported="false" />
         <activity
-            android:name=".Registro"
+            android:name=".MainMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".MainMenu"
-            android:exported="false" />
-        <activity
-            android:name=".Login"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        android:name=".LoginActivity"
+        android:exported="true"
+        android:theme="@style/Theme.App.Starting"> <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+    </activity>
     </application>
 
 </manifest>

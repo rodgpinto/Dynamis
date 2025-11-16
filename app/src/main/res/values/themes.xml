@@ -5,5 +5,15 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.Dynamis" parent="Base.Theme.Dynamis" />
+    <style name="Theme.Dynamis" parent="Theme.Material3.DayNight.NoActionBar"></style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/midnightblue</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo_full</item>
+
+        <item name="windowSplashScreenAnimationDuration">1500</item>
+        <item name="postSplashScreenTheme">@style/Theme.Dynamis</item>
+
+    </style>
 </resources>

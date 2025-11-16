@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    >
+
+    <ImageButton
+        android:id="@+id/btnAtras"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/navbar_back_description"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_atras_background"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/navbar_menu_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/navbar_menu_description"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_vertical"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/navbar_help_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="0dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/boton_de_ayuda"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/navbar_menu_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_ayuda"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/navbar_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btnAtras"
+        app:layout_constraintEnd_toStartOf="@id/navbar_help_button"
+        app:layout_constraintStart_toEndOf="@id/btnAtras"
+        app:layout_constraintTop_toTopOf="@id/btnAtras"
+        tools:text="Título de Pantalla" />
+
+</merge>

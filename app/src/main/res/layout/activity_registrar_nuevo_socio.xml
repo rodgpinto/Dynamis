@@ -1,0 +1,257 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:context=".RegistrarNuevoSocioActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/registrar_nuevo_socio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp">
+
+        <include
+            android:id="@+id/navbar"
+            layout="@layout/activity_navbar_subpage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/midnightblue"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <EditText
+            android:id="@+id/apellido"
+            android:layout_width="258dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="260dp"
+            android:ems="10"
+            android:hint="@string/Apellido"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="258dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="180dp"
+            android:ems="10"
+            android:hint="@string/nombre"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill" />
+
+        <Spinner
+            android:id="@+id/spinnerDocumento"
+            android:layout_width="258dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="344dp"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="258dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="424dp"
+            android:ems="10"
+            android:hint="@string/_123456789"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtFechaNacimiento"
+            android:layout_width="258dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="500dp"
+            android:ems="10"
+            android:hint="@string/dd_mm_aaaa"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/direccion"
+            android:layout_width="258dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="572dp"
+            android:ems="10"
+            android:hint="@string/calle_falsa_123"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chkFichaInscripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="668dp"
+            android:text="@string/ficha_inscripci_n"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chkAptoMedico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="668dp"
+            android:text="@string/apto_m_dico"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtPago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="804dp"
+            android:gravity="center"
+            android:text="@string/pago"
+            android:textColor="@android:color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerActividad"
+            android:layout_width="258dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="880dp"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtPagoCuota"
+            android:layout_width="258dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="956dp"
+            android:ems="10"
+            android:hint="@string/_5000"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCuotaInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="936dp"
+            android:text="@string/cuota_inicial"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.224"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerTipoPago"
+            android:layout_width="258dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1108dp"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtFechaPago"
+            android:layout_width="258dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="1032dp"
+            android:ems="10"
+            android:hint="@string/dd_mm_aaaa"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="1216dp"
+            android:backgroundTint="@color/midnightblue"
+            android:text="@string/ingresar"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="1212dp"
+            android:backgroundTint="@color/midnightblue"
+            android:text="@string/limpiar"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.877"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
