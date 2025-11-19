@@ -95,10 +95,11 @@ class ListarSociosActivity : AppCompatActivity() {
             try {
                 if (cursor.moveToFirst()) {
                     do {
-                        val nombre =
-                            cursor.getString(cursor.getColumnIndexOrThrow(UsuarioEntry.COLUMN_NOMBRE))
+
                         val apellido =
                             cursor.getString(cursor.getColumnIndexOrThrow(UsuarioEntry.COLUMN_APELLIDO))
+                        val nombre =
+                            cursor.getString(cursor.getColumnIndexOrThrow(UsuarioEntry.COLUMN_NOMBRE))
                         val dni =
                             cursor.getString(cursor.getColumnIndexOrThrow(UsuarioEntry.COLUMN_DNI))
 
@@ -112,7 +113,7 @@ class ListarSociosActivity : AppCompatActivity() {
                         }
 
                         val item = SocioItem(
-                            nombreCompleto = "$nombre $apellido",
+                            nombreCompleto = "$apellido $nombre",
                             dni = dni,
                             fechaVencimiento = fechaVencimientoStr
                         )
